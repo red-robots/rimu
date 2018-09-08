@@ -1,0 +1,160 @@
+
+.clear {clear: both;}
+.wrapper {
+	width: 90%;
+	margin: 0px auto;
+	padding: 20px;
+	
+	@media screen and (min-width: $tabwidth) {
+		// width: 100%;
+	}
+	@media screen and (min-width: $deskwidth) {
+		width: 1200px;
+		padding: 0px;
+	}
+}
+.banner {
+	width: 100%;
+	position: relative;
+	float: left;
+	
+	.image {
+		width: 100%;
+		float: left;
+		position: relative;
+		line-height: 0;
+		img {
+			width:100%;
+		}
+	}
+	.logowrap {
+		width: 90%;
+		margin: 10px auto;
+		@media screen and (min-width: $tabwidth) {
+			position: absolute;
+			width: 441px;
+			height: 250px;
+			top: 50px;
+			left: 0; 
+			right: 0; 
+			margin-left: auto; 
+			margin-right: auto; 
+		}
+	}
+}
+#content {
+	padding: 20px 0;
+	@media screen and (min-width: $tabwidth) {
+		padding: 60px 0;
+	}
+}
+.content-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 66%;
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+
+.widget-area {
+	width: 100%;
+	margin: 0px auto;
+	
+	@media screen and (min-width: $tabwidth) {
+		width: 26%;
+		float: right;
+		margin: 60px 0 0 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+	.item {
+		width: 100%;
+		float: left;
+		margin: 5px 0;
+		border-bottom: 1px solid #ccc;
+	}
+}
+a {
+	@include transition(all ease .2s);
+	text-decoration: none;
+}
+/* Logo */
+.logo , h1.logo {
+	width: 100%;
+	background-image: url(images/logo.png);	
+	margin: 10px auto;
+
+	@media screen and (min-width: $tabwidth) {
+	
+		float: left;
+		margin: 0;
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+.logo a, h1.logo a {
+	width: 100%;
+	display: block;
+
+	@media screen and (min-width: $tabwidth) {
+		
+	}
+	@media screen and (min-width: $deskwidth) {
+		/*width: 1200px;*/
+	}
+}
+article {
+	padding: 0 0 30px 0;
+	border-bottom: 3px solid #ccc;
+}
+a.more-link {
+	display: inline-block;
+	width: auto;
+	padding: 10px 25px ;
+	background-color: $color-black;
+	color: #fff;
+	margin: 0 0 20px 0;
+}
+a.social {
+	color: $color-red;
+	font-size: 40px;
+	margin: 0 5px;
+	transform: scale(1);
+	@include transition(all ease .2s);
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+.site-footer {
+	width: 100%;
+	clear: both;
+	padding: 50px 0;
+	background-color: #000;
+	color: #fff;
+	.social {
+		width: 100%;
+		text-align: center;
+		padding: 20px 0;
+		a {
+			color: #fff;
+			&:hover {
+				color: $color-red;
+			}
+		}
+	}
+}
+.disclaimer {
+	width: 100%;
+	padding: 20px 0 0 0;
+	border-top: 2px solid rgba(#fff, .5);
+	color: rgba(#fff, .7);
+	font-size: 12px;
+}

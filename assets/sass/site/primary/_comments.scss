@@ -1,0 +1,320 @@
+/* -------------------------------------------------------------------------------- */
+/*	8. Comments
+/* -------------------------------------------------------------------------------- */
+
+
+.comments,
+.comment-respond {
+	border-top: 4px solid #EEE;
+	padding-top: 10%;
+	margin-top: 10%;
+}
+
+.post-meta-bottom + .comments,
+.post-meta-bottom + .comment-respond {
+	border-top: none;
+	padding-top: 0;
+}
+
+.comments-title,
+#reply-title,
+.pingbacks-title {
+	font-size: 1.75em;
+	font-weight: 400;
+	color: #2d2d2d;
+}
+
+.comments-title { margin-bottom: 10%; }
+
+li.comment,
+li > div.comment {
+	margin-bottom: 25px;
+	position: relative;
+}
+
+li > div.comment { 
+	padding-bottom: 25px;
+	border-bottom: 1px solid #EEE; 
+}
+
+.commentlist > li:first-child > div.comment:first-child { border-top: 1px solid #EEE; padding-top: 25px; }
+
+.children > li > div.comment { padding-left: 10%; }
+.children .children > li > div.comment { padding-left: 20%; }
+.children .children .children > li > div.comment { padding-left: 30%; }
+.children .children .children .children > li > div.comment { padding-left: 40%; }
+.children .children .children .children .children > li > div.comment { padding-left: 50%; }
+
+.comment .children li:last-child { margin-bottom: 0; }
+
+.commentlist > li.comment:last-child,
+.commentlist > li.comment div.comment:last-child {
+	margin-bottom: 0;
+}
+
+
+/* Pingback list --------------------------------------- */
+
+
+.comments .pingbacks { margin-top: 5.5%; }
+
+.pingbacks-inner { margin: 0 auto; }
+
+.pingbacks-title { margin-bottom: 20px; }
+
+.pingbacklist li {
+	padding: 0.5em;
+	line-height: 130%;
+}
+
+.pingbacklist a:hover { text-decoration: underline; }
+
+.pingbacklist li:nth-child(odd) { background: #f9f9f9; }
+
+.pingbacklist .comment-edit-link { color: #999; }
+.pingbacklist .comment-edit-link:hover { color: #444; text-decoration: none; }
+
+
+/* Comment meta --------------------------------------- */
+
+
+.comment-meta { margin-bottom: 1em; }
+
+.comment-meta .avatar {
+	display: block;
+	height: 50px;
+	width: 50px;
+	border-radius: 999px;
+	float: left;
+}
+
+.comment-actions {
+	font-size: 0.7em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+.comment-actions a { margin-left: 8px; }
+.comment-actions a:first-child { margin-left: 0; }
+
+.comment-meta-content {
+	margin-left: 70px;
+	padding-top: 7px;
+}
+
+.comment-meta-content cite {
+	font-size: 1.075em;
+	color: #444;
+	margin-bottom: 5px;
+	display: block;
+	font-weight: 700;
+}
+
+.bypostauthor .comment-meta-content cite .post-author { 
+	font-weight: 400; 
+	color: #999; 
+	margin-left: 3px; 
+	letter-spacing: 0; 
+}
+
+.comment-meta-content cite a { color: #444; }
+.comment-meta-content cite a:hover { color: #1abc9c; }
+
+.comment-meta-content p {
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+
+.comment-meta-content p a { color: #BBB; }
+.comment-meta-content p a:hover { color: #1abc9c; }
+
+.comment-awaiting-moderation {
+	position: absolute;
+	right: 0;
+	top: 4px;
+	font-weight: bold;
+	display: block;
+	padding: 10px;
+	background: #CCC;
+	border-radius: 3px;
+	font-size: 0.8rem;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.comment-awaiting-moderation:hover { background: #2d2d2d; }
+
+
+/* Comment nav below --------------------------------------- */
+
+
+.comment-nav-below {
+	margin-top: 10%;
+	margin-bottom: -5%;
+	border-top: 4px solid #EEE;
+	padding-top: 5%;
+	background: none;
+	font-size: 0.85em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.comment-nav-below a { color: #666; }
+
+
+/* Comment content --------------------------------------- */
+
+
+.comment-content {
+	margin-left: 70px;
+	font-size: 1em;
+}
+
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6 {
+	font-size: 1.25em;
+	font-weight: 500;
+	margin-top: 50px;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+
+
+/* Respond --------------------------------------- */
+
+
+.comment-respond { border-top: 0; padding-top: 0; }
+
+.comments + .comment-respond {
+	padding-top: 10%;
+	border-top: 4px solid #EEE;
+	margin-top: 10%;
+}
+
+#reply-title { margin-bottom: 20px; }
+
+#respond a:hover { text-decoration: underline; }
+
+#respond .content-section-right {
+	border-radius: 0 0 4px 4px;
+	border-top: 1px solid #EEE;
+	z-index: 12;
+}
+
+.nocomments {
+	margin-top: 10%;
+	color: #666;
+	text-align: center;
+}
+
+#cancel-comment-reply-link {
+	margin-left: 10px;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+
+#respond p,
+#respond code {
+	line-height: 150%;
+}
+
+#respond code { border-radius: 2px; }
+
+.comment-form p { margin-bottom: 20px; }
+.comment-form p:last-child { margin-bottom: 0; }
+
+p.comment-notes,
+p.logged-in-as {
+	margin-bottom: 10%;
+	color: #666;
+}
+
+#respond form label,
+.comment-form .required { display: none; }
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input.password,
+.comment-form textarea {
+	-webkit-appearance: none;
+	border: none;
+	background: #FAFAFA;
+	font-size: 1em;
+	color: #444;
+	font-family: 'Lato', 'Helvetica Neue', sans-serif;
+	border-radius: 3px;
+	padding: 16px;
+	margin: 0;
+	width: 100%;
+	border: 1px solid #EEE;
+}
+
+.comment-form textarea { line-height: 160%; height: 250px; }
+
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form input.password:focus,
+.comment-form textarea:focus {
+	outline: none;
+	background-color: #EEE;
+	color: #444;
+}
+
+.comment-form input { max-width: 75%; }
+
+.comment-form input[type="submit"] {
+	width: auto;
+	max-width: none;
+	padding: 16px 18px;
+	margin-bottom: 0;
+	border: none;
+	background: #1D1D1D;
+	color: #FFF;
+	font-family: 'Lato', sans-serif;
+	font-size: 0.925rem;
+	border-radius: 4px;
+}
+
+.comment-form input[type="submit"]:hover {
+	cursor: pointer;
+	background: #1abc9c;
+	color: #FFF;
+}
+
+.comment-form input[type="submit"]:active {
+	top: 1px;
+	position: relative;
+}
+
+p.form-allowed-tags {
+	margin-top: 1.5em;
+	line-height: 160%
+}
+
+.comment-form p.form-submit { margin: 1.5em 0 0; }
+
+
+/* In Commentlist */
+
+
+.commentlist .comment-respond { 
+	margin: 25px 0; 
+	padding-bottom: 25px;
+	border-bottom: 1px solid #eee;
+}
+
+.commentlist .comment-reply-title { margin-bottom: 10px; }
+
+.commentlist p.comment-notes,
+.commentlist p.logged-in-as {
+	margin-bottom: 20px;
+}

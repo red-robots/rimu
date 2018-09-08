@@ -1,0 +1,260 @@
+/* -------------------------------------------------------------------------------- */
+/*	11. Sidebar
+/* -------------------------------------------------------------------------------- */
+
+
+.widget {
+	padding-bottom: 15%;
+	border-bottom: 4px solid #EEE;
+	margin-bottom: 15%;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		list-style: none;
+	}
+}
+
+.widget:last-child {
+	padding-bottom: 0;
+	border-bottom: 0;
+	margin-bottom: 0;
+}
+
+.widget-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color: #444;
+}
+
+/* widget-content */
+
+.widget-content {
+	color: #555;
+	font-size: 1rem;
+	line-height: 140%;
+}
+
+.widget-content *:last-child { margin-bottom: 0; }
+
+.widget-content a:hover { text-decoration: underline }
+
+.widget-content p {
+	line-height: 150%;
+	margin-bottom: 1em;
+}
+
+.widget-content ul li {
+	padding: 10px 0;
+	border-top: 1px solid #EEE;
+	line-height: 130%;
+}
+
+.widget-content li ul > li:first-child { margin-top: 10px; }
+.widget-content .page_item_has_children { padding-bottom: 0; }
+
+.widget-content li ul li { padding-left: 15px; }
+
+.widget-content ul li .post-date { margin-left: 5px; color: #999; }
+
+.widget-content > ul > li:first-child { border-top: 0; }
+
+
+/* Widget search --------------------------------------- */
+
+
+.widget_search form { position: relative; }
+
+.widget_search input { height: 52px; }
+
+.widget_search input#s {
+	-webkit-appearance: none;
+	width: 99%;
+	padding: 18px 95px 18px 18px;
+	background: #FFF;
+	border: 1px solid #DDD;
+	border-right: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 1rem;
+	border-radius: 3px 0 0 3px;
+}
+
+.widget_search #s:focus { 
+	outline: none; 
+	background: #EEE;
+	color: #444;
+}
+
+.widget_search #searchsubmit {
+	-webkit-appearance: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 85px;
+	line-height: 1;
+	border: none;
+	background: #1abc9c;
+	border: 1px solid #1abc9c;
+	color: #FFF;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.8rem;
+	font-family: 'Lato', sans-serif;
+	border-radius: 0 3px 3px 0;
+}
+
+.widget_search #searchsubmit:hover {
+	cursor: pointer;
+	background-color: #089D80;
+	border-color: #089D80;
+}
+
+
+/* Widget calendar --------------------------------------- */
+
+
+#wp-calendar {
+	color: #888;
+	width: 100%;
+	max-width: 100%;
+	text-align: center;
+	font-size: 0.9em;
+}
+
+#wp-calendar a { color: #1abc9c; }
+
+#wp-calendar,
+#wp-calendar caption,
+#wp-calendar tr,
+#wp-calendar td,
+#wp-calendar th {
+	text-align: center;
+}
+
+#wp-calendar caption,
+#wp-calendar th,
+#wp-calendar td {
+	padding: 4% 2%;
+}
+
+#wp-calendar caption,
+#wp-calendar thead {
+	color: #666;
+	border-bottom: 1px solid #EEE;
+}
+
+#wp-calendar caption { text-transform: capitalize; }
+
+#wp-calendar thead th {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 0.9em;
+}
+
+#wp-calendar tfoot { border-top: 1px solid #EEE; }
+#wp-calendar tfoot td { padding: 0; }
+#wp-calendar tfoot #prev { text-align: left; }
+#wp-calendar tfoot #next { text-align: right; }
+
+#wp-calendar tfoot a {
+	display: block;
+	color: #999;
+	padding: 0.6em;
+}
+
+#wp-calendar tfoot a:hover {
+	text-decoration: none;
+	color: #1abc9c;
+	background: rgba(255, 255, 255, .05);
+}
+
+
+/* Widget tag cloud --------------------------------------- */
+
+
+.widget_tag_cloud .tagcloud a { font-size: 0.9em !important; }
+
+.tagcloud a {
+	display: block;
+	float: left;
+	padding: 8px 11px;
+	line-height: 1;
+	margin: 0 5px 5px 0;
+	background: #BBB;
+	color: #FFF;
+	border-radius: 3px;
+}
+
+.tagcloud a:hover {
+	background: #1abc9c;
+	text-decoration: none;
+	color: #FFF;
+}
+
+
+/* Widget Flickr --------------------------------------- */
+
+
+.flickr_badge_image {
+	width: 30%;
+	margin-bottom: 5%;
+	margin-left: 5%;
+	overflow: hidden;
+	float: left;
+	line-height: 0;
+}
+
+#flickr_badge_image1,
+#flickr_badge_image4,
+#flickr_badge_image7,
+#flickr_badge_image10,
+#flickr_badge_image13,
+#flickr_badge_image16,
+#flickr_badge_image19,
+#flickr_badge_image22,
+#flickr_badge_image25 {
+	margin-left: 0;
+}
+
+.flickr_badge_image img {
+	display: block;
+	padding: 5px;
+	background: #EEE;
+}
+
+.flickr_badge_image a:hover img { background: #1abc9c; }
+
+.widgetmore a {
+	display: block;
+	clear: both;
+	padding: 0.5em 0;
+}
+
+
+/* Widget Dribbble --------------------------------------- */
+
+
+.dribbble-shot {
+	display: block;
+	width: 47.5%;
+	margin-bottom: 5%;
+	margin-right: 5%;
+	overflow: hidden;
+	float: left;
+	line-height: 0;
+}
+
+.dribbble-shot:nth-child(2n) { margin-right: 0; }
+
+.dribbble-shot img {
+	display: block;
+	padding: 5px;
+	background: #EEE;
+}
+
+.dribbble-shot:hover img { background: #1abc9c; }
+
