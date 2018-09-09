@@ -30,7 +30,18 @@
 
 	<header id="masthead" class="site-header" role="banner">
 		
-			<?php $banner=get_field('banner');
+			<?php 
+			// if is home
+			if(is_front_page()){
+				$post = get_post(2); 
+				setup_postdata( $post );
+					$banner = get_field('banner');
+				wp_reset_postdata();
+			} else {
+				$banner=get_field('banner');
+			}
+
+			
 			if( $banner ) { ?>
 				<div class="banner">
 					<div class="image"><img src="<?php echo $banner['url']; ?>"></div>

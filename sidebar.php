@@ -17,6 +17,22 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <aside id="secondary" class="widget-area" role="complementary">
 	<div class="widget">
+		<li>
+			<a href="<?php bloginfo('url'); ?>/login">Login</a>
+		</li>
+		<li>
+			<a href="<?php bloginfo('url'); ?>/register">Register</a>
+		</li>
+		<?php if(is_user_logged_in()) { ?>
+		<li>
+			<a href="<?php bloginfo('url'); ?>/my-account">My Account</a>
+		</li>
+		<li>
+			<a href="<?php bloginfo('url'); ?>/profile">Profile</a>
+		</li>
+		<?php } ?>
+	</div>
+	<div class="widget">
 	<h2 class="widget-title">Follow Us</h2>
 		<?php if($facebook) { ?>
 			<a class="social" href="<?php echo $facebook; ?>" target="_blank"><i class="fab fa-facebook-square"></i></a>

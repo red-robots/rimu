@@ -1940,6 +1940,7 @@ a.social:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:s
 .site-footer .social a{color:#fff}
 .site-footer .social a:hover{color:#dd4040}
 .disclaimer{width:100%;padding:20px 0 0 0;border-top:2px solid rgba(255,255,255,0.5);color:rgba(255,255,255,0.7);font-size:12px}
+.woocommerce-result-count,.woocommerce-ordering{display:none}
 .sticky{display:block}
 .hentry{margin:0 0 1.5em}
 .byline,.updated:not(.published){display:none}
