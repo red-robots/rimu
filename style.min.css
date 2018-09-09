@@ -1928,7 +1928,8 @@ a{-webkit-transition:all ease .2s;transition:all ease .2s;text-decoration:none}
 }@media screen and (min-width:1200px){}
 .logo a,h1.logo a{width:100%;display:block}
 @media screen and (min-width:1200px){}
-article{padding:0 0 30px 0;border-bottom:3px solid #ccc}
+article{padding:0 0 30px 0;float:left}
+.page-template-page-blog article{border-bottom:3px solid #ccc}
 a.more-link{display:inline-block;width:auto;padding:10px 25px;background-color:#2d2d2d;color:#fff;margin:0 0 20px 0}
 .readmore a{display:inline-block;width:auto;padding:10px 25px;background-color:#2d2d2d;color:#fff !important;margin:0 0 20px 0}
 a.more-link:hover,.readmore a:hover{background-color:#dd4040}
@@ -1945,7 +1946,7 @@ a.social:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:s
 .single .byline,.group-blog .byline{display:inline}
 .page-content,.entry-content,.entry-summary{margin:1.5em 0 0}
 .page-links{clear:both;margin:0 0 1.5em}
-.entry-footer{padding:10px 0;border-top:1px solid #ccc;font-size:12px;color:#333}
+.entry-footer{padding:10px 0;border-top:1px solid #ccc;font-size:12px;width:100%;clear:both;color:#333}
 .entry-footer a{color:#2d2d2d}
 .entry-footer a:hover{color:#dd4040}
 section.homepage{width:100%}

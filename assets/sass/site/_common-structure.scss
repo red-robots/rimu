@@ -113,6 +113,9 @@ a {
 }
 article {
 	padding: 0 0 30px 0;
+	float: left;
+}
+.page-template-page-blog article {
 	border-bottom: 3px solid #ccc;
 }
 a.more-link {
