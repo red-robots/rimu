@@ -1762,7 +1762,7 @@ a:hover,a:active{outline:0}
 .menu-toggle,.main-navigation.toggled ul{display:block}
 .menu-toggle ul.sub-menu,.main-navigation.toggled ul ul.sub-menu{background-color:rgba(255,255,255,0.1)}
 @media screen and (min-width:600px){.menu-toggle{display:none}
-}button.menu-toggle{border:0;text-shadow:none;background-color:#ccc;color:#fff;box-shadow:none;width:auto;display:inline-block;margin:10px auto;border-radius:0;text-transform:uppercase;font-weight:300;font-size:20px}
+}button.menu-toggle{border:0;text-shadow:none;background-color:#dd4040;color:#fff;box-shadow:none;width:auto;display:inline-block;margin:10px auto;border-radius:0;text-transform:uppercase;font-weight:300;font-size:20px}
 @media screen and (min-width:600px){button.menu-toggle{display:none}
 }.site-main .comment-navigation,.site-main .posts-navigation,.site-main .post-navigation{margin:0 0 1.5em;overflow:hidden}
 .comment-navigation .nav-previous,.posts-navigation .nav-previous,.post-navigation .nav-previous{float:left;width:50%}
@@ -1930,6 +1930,8 @@ a{-webkit-transition:all ease .2s;transition:all ease .2s;text-decoration:none}
 @media screen and (min-width:1200px){}
 article{padding:0 0 30px 0;border-bottom:3px solid #ccc}
 a.more-link{display:inline-block;width:auto;padding:10px 25px;background-color:#2d2d2d;color:#fff;margin:0 0 20px 0}
+.readmore a{display:inline-block;width:auto;padding:10px 25px;background-color:#2d2d2d;color:#fff;margin:0 0 20px 0}
+a.more-link:hover,.readmore a:hover{background-color:#dd4040}
 a.social{color:#dd4040;font-size:40px;margin:0 5px;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all ease .2s;transition:all ease .2s}
 a.social:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
 .site-footer{width:100%;clear:both;padding:50px 0;background-color:#000;color:#fff}
@@ -1946,6 +1948,15 @@ a.social:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:s
 .entry-footer{padding:10px 0;border-top:1px solid #ccc;font-size:12px;color:#333}
 .entry-footer a{color:#2d2d2d}
 .entry-footer a:hover{color:#dd4040}
+section.homepage{width:100%}
+@media screen and (min-width:600px){section.homepage{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}
+}section.homepage .item{width:100%;float:left;margin:0 0 20px 0;padding:10px}
+@media screen and (min-width:600px){section.homepage .item{width:auto;-webkit-flex-basis:45%;-ms-flex-preferred-size:45%;flex-basis:45%;padding:2%;border-bottom:4px solid #ccc}
+}section.homepage article{border:0}
+section.homepage ul{margin:0;padding:0;list-style:none}
+section.homepage li{margin:0 0 5px 0}
+section.homepage a{color:#2d2d2d;border-bottom:1px solid #dd4040}
+section.homepage a:hover{color:#dd4040}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comments,.comment-respond{border-top:4px solid #EEE;padding-top:10%;margin-top:10%}
 .post-meta-bottom+.comments,.post-meta-bottom+.comment-respond{border-top:0;padding-top:0}

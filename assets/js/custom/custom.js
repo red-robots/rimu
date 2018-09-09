@@ -77,15 +77,6 @@ jQuery(document).ready(function ($) {
 	    }, 500);
 	    return false;
 	});
-
-	/*
-	*
-	*	Nice Page Scroll
-	*
-	------------------------------------*/
-	$(function(){	
-		$("html").niceScroll();
-	});
 	
 	
 	/*

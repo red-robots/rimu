@@ -123,6 +123,19 @@ a.more-link {
 	color: #fff;
 	margin: 0 0 20px 0;
 }
+.readmore a {
+	display: inline-block;
+	width: auto;
+	padding: 10px 25px ;
+	background-color: $color-black;
+	color: #fff;
+	margin: 0 0 20px 0;
+}
+a.more-link, .readmore a {
+	&:hover {
+		background-color: $color-red;
+	}
+}
 a.social {
 	color: $color-red;
 	font-size: 40px;

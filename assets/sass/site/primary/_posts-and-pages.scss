@@ -39,3 +39,44 @@
 		}
 	}
 }
+section.homepage {
+	width: 100%;
+	@media screen and (min-width: $tabwidth) {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: stretch;
+	}
+	.item {
+		width: 100%;
+		float: left;
+		margin: 0 0 20px 0;
+		padding: 10px;
+		@media screen and (min-width: $tabwidth) {
+			width: auto;
+			flex-basis: 45%;
+			padding: 2%;
+			border-bottom: 4px solid #ccc;
+		}
+	}
+	article {border: 0;}
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+	}
+	li {
+		margin: 0 0 5px 0;
+
+	}
+	a {
+		color: $color-black;
+		border-bottom: 1px solid $color-red;
+		&:hover {
+			color: $color-red;
+		}
+	}
+
+}
