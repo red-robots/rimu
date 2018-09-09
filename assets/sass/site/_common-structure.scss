@@ -32,13 +32,13 @@
 		margin: 10px auto;
 		@media screen and (min-width: $tabwidth) {
 			position: absolute;
-			width: 441px;
-			height: 250px;
-			top: 50px;
-			left: 0; 
-			right: 0; 
-			margin-left: auto; 
-			margin-right: auto; 
+			width: 250px;
+			// height: 250px;
+			top: 2%;
+			left: 2%; 
+			// right: 0; 
+			// margin-left: auto; 
+			// margin-right: auto; 
 		}
 	}
 }
@@ -88,7 +88,7 @@ a {
 /* Logo */
 .logo , h1.logo {
 	width: 100%;
-	background-image: url(images/logo.png);	
+	// background-image: url(images/logo-nw.png);	
 	margin: 10px auto;
 
 	@media screen and (min-width: $tabwidth) {
