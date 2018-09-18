@@ -25,7 +25,7 @@ get_header(); ?>
 
 				<div class="entry-content">
 
-				<?php if( is_single(900) ) { 
+				<?php if( is_single(900) ) :
 						$user_id = get_current_user_id();
 						$accessCode = get_field('assessments_code', 'user_'. $user_id );
 
@@ -48,6 +48,8 @@ get_header(); ?>
 				<?php 
 					
 					}
+
+					endif;
 
 					?>
 					<?php the_content();?>
