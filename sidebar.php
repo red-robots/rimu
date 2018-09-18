@@ -18,18 +18,25 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 <aside id="secondary" class="widget-area" role="complementary">
 	<div class="widget">
 		<li>
+		<div class="rimubtn side">
 			<a href="<?php bloginfo('url'); ?>/login">Login</a>
+			</div>
 		</li>
 		<li>
+		<div class="rimubtn side">
 			<a href="<?php bloginfo('url'); ?>/register">Register</a>
+			</div>
 		</li>
 		<?php if(is_user_logged_in()) { ?>
-		<li>
-			<a href="<?php bloginfo('url'); ?>/my-account">My Account</a>
-		</li>
-		<li>
-			<a href="<?php bloginfo('url'); ?>/profile">Profile</a>
-		</li>
+			<li>
+			<div class="rimubtn side"><a  href="<?php bloginfo('url'); ?>/my-account">My Account</a></div>
+				
+			</li>
+			<li>
+			<div class="rimubtn side">
+				<a  href="<?php bloginfo('url'); ?>/profile">Profile</a>
+				</div>
+			</li>
 		<?php } ?>
 	</div>
 	<div class="widget">
