@@ -20,22 +20,36 @@ get_header(); ?>
 				the_post_thumbnail();
 				} ?>
 				<header class="entry-header">
-					<?php
-						if ( is_single() ) {
-							the_title( '<h1 class="entry-title">', '</h1>' );
-						} else {
-							the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-						}
-
-					if ( 'post' === get_post_type() ) : ?>
-					<div class="entry-meta">
-						<?php acstarter_posted_on(); ?>
-					</div><!-- .entry-meta -->
-					<?php
-					endif; ?>
+					<?php the_title( '<h1 class="entry-title">', '</h1>' );  ?>
 				</header><!-- .entry-header -->
 
 				<div class="entry-content">
+
+				<?php if( is_single(900) ) { 
+						$user_id = get_current_user_id();
+						$accessCode = get_field('assessments_code', 'user_'. $user_id );
+
+						// echo '<pre>';
+						// print_r($user_id);
+						// echo '</pre>';
+						
+				?>
+					<section class="assessments">
+						<?php if($accessCode) { ?>
+						<h3>Your Assessments Code:</h3>
+						<p><?php echo $accessCode; ?></p>
+						<a href="">Take Assessment now.</a>
+						<?php } else { 
+							$email = 'revans@rimucoaching.com';
+							$email = antispambot($email);
+							?>
+						No Assessment code. Please email us at <a href="mailto:<?php echo $email; ?>"><?php echo $email; ?></a> to obtain your assessment code.
+					</section>
+				<?php 
+					
+					}
+
+					?>
 					<?php the_content();?>
 				</div><!-- .entry-content -->
 
@@ -55,3 +69,9 @@ get_header(); ?>
 <?php
 get_sidebar();
 get_footer();
+
+
+
+
+
+
