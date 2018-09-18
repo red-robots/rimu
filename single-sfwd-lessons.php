@@ -38,7 +38,9 @@ get_header(); ?>
 						<?php if($accessCode) { ?>
 						<h3>Your Assessments Code:</h3>
 						<p><?php echo $accessCode; ?></p>
-						<a href="">Take Assessment now.</a>
+						<div class="rimubtn page">
+							<a href="">Take Assessment now.</a>
+						</div>
 						<?php } else { 
 							$email = 'revans@rimucoaching.com';
 							$email = antispambot($email);

@@ -29,8 +29,15 @@ input[type="submit"] {
 	margin: 0 0 10px 0;
 	&.side {
 		width: 100%;
-		position: relative;
+		
+	}
+	&.page {
+		width: auto;
 		display: inline-block;
+		
+	}
+	&.side, &.page {
+		position: relative;
 		a{
 			display: block;
 			padding: 10px 0;
