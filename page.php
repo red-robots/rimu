@@ -23,10 +23,23 @@ get_header();
 
 				get_template_part( 'template-parts/content', 'page' );
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
+				if( is_single(900) ) { 
+					$user_id = get_current_user_id();
+					$accessCode = get_field('assessments_code', 'user_'. $user_id );
+
+					// echo '<pre>';
+					// print_r($user_id);
+					// echo '</pre>';
+					
+			?>
+				<section class="assessments">
+					<h3>Your Assessments Code:</h3>
+					<p><?php echo $accessCode; ?></p>
+					<a href="">Take Assessment now.</a>
+				</section>
+			<?php 
+				
+				}
 
 			endwhile; // End of the loop.
 			?>
