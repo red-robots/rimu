@@ -1967,6 +1967,7 @@ section.homepage ul{margin:0;padding:0;list-style:none}
 section.homepage li{margin:0 0 5px 0}
 section.homepage a{color:#2d2d2d;border-bottom:1px solid #dd4040}
 section.homepage a:hover{color:#dd4040}
+p.graded-disclaimer{display:none}
 .blog .format-aside .entry-title,.archive .format-aside .entry-title{display:none}
 .comments,.comment-respond{border-top:4px solid #EEE;padding-top:10%;margin-top:10%}
 .post-meta-bottom+.comments,.post-meta-bottom+.comment-respond{border-top:0;padding-top:0}
