@@ -61,6 +61,33 @@ section.homepage {
 			padding: 2%;
 			border-bottom: 4px solid #ccc;
 		}
+		.teaser-prod {
+			width: 100%;
+			@media screen and (min-width: $tabwidth) {
+				width: 48%;
+				float: left;
+			}
+		}
+		.teaser-btn {
+			width: 100%;
+			@media screen and (min-width: $tabwidth) {
+				width: 48%;
+				float: right;
+			}
+			a {
+				display: block;
+				padding: 10px 0;
+				text-align: center;
+				color: #fff;
+				text-decoration: none;
+				background-color: $color-red;
+				transform: scale(1);
+				@include transition(all ease .3s);
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+		}
 	}
 	article {border: 0;}
 	ul {

@@ -31,7 +31,14 @@ get_header();
 
 			<section class="homepage">
 				<div class="item">
-					<?php echo $product; ?>
+					<?php //echo $product; ?>
+					<h2>Develop Your Brand</h2>
+					<div class="teaser-prod">
+						<img src="<?php bloginfo('template_url'); ?>/images/personal-brand.png" alt="Rimu - Personal Branding">
+					</div>
+					<div class="teaser-btn rimubtn ">
+						<a href="<?php bloginfo('url'); ?>/courses/develop-your-brand">Take the Course Now</a>
+					</div>
 				</div>
 				<div class="item">
 					<?php

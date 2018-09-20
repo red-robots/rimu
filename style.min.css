@@ -1962,7 +1962,13 @@ section.homepage{width:100%}
 @media screen and (min-width:600px){section.homepage{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}
 }section.homepage .item{width:100%;float:left;margin:0 0 20px 0;padding:10px}
 @media screen and (min-width:600px){section.homepage .item{width:auto;-webkit-flex-basis:45%;-ms-flex-preferred-size:45%;flex-basis:45%;padding:2%;border-bottom:4px solid #ccc}
-}section.homepage article{border:0}
+}section.homepage .item .teaser-prod{width:100%}
+@media screen and (min-width:600px){section.homepage .item .teaser-prod{width:48%;float:left}
+}section.homepage .item .teaser-btn{width:100%}
+@media screen and (min-width:600px){section.homepage .item .teaser-btn{width:48%;float:right}
+}section.homepage .item .teaser-btn a{display:block;padding:10px 0;text-align:center;color:#fff;text-decoration:none;background-color:#dd4040;-webkit-transform:scale(1);-ms-transform:scale(1);transform:scale(1);-webkit-transition:all ease .3s;transition:all ease .3s}
+section.homepage .item .teaser-btn a:hover{-webkit-transform:scale(1.1);-ms-transform:scale(1.1);transform:scale(1.1)}
+section.homepage article{border:0}
 section.homepage ul{margin:0;padding:0;list-style:none}
 section.homepage li{margin:0 0 5px 0}
 section.homepage a{color:#2d2d2d;border-bottom:1px solid #dd4040}
