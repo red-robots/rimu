@@ -39,7 +39,7 @@ get_header(); ?>
 						<h3>Your Assessments Code:</h3>
 						<p><?php echo $accessCode; ?></p>
 						<div class="rimubtn page">
-							<a href="">Take Assessment now.</a>
+							<a target="_blank" href="https://www.gallupstrengthscenter.com/register">Take Assessment now.</a>
 						</div>
 						<?php } else { 
 							$email = 'revans@rimucoaching.com';
