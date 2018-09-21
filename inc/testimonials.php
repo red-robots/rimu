@@ -5,9 +5,10 @@
 	'posts_per_page' => -1
 ));
 	if ($wp_query->have_posts()) : ?>
-<section class="testimonial">
+<section class="testimonials">
+<h2>Testimonials</h2>
 	<div class="flexslider">
-		<ul class="slides"></ul>
+		<ul class="slides">
 		    <?php while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 		    	<li>
 		    		<div class="testimonial">
@@ -16,7 +17,7 @@
 		    		</div>
 		    	</li>
 		    <?php endwhile; ?>
-		</div>
+		</ul>
 	</div>
 </section>
 <?php endif; ?>

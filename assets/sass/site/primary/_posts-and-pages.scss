@@ -113,3 +113,25 @@ section.homepage {
 p.graded-disclaimer {
 	display: none;
 }
+section.testimonials {
+	width: 100%;
+	padding: 5%;
+	background-color: #efefef;
+	text-align: center;
+	margin: 30px 0;
+	.testimonial {
+		font-size: 18px;
+	}
+	h2 {
+		width: 100%;
+		text-align: center;
+		margin: 0 0 30px 0;
+	}
+	.title {
+		display: inline-block;
+		width: auto;
+		text-align: center;
+		font-weight: bold;
+		border-bottom: 2px solid #333;
+	}
+}
