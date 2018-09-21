@@ -40,8 +40,10 @@ get_header();
 						<a href="<?php bloginfo('url'); ?>/courses/develop-your-brand">Take the Course Now</a>
 					</div>
 					<?php $vid=get_field('teaser_video'); if($vid) { ?>
-						<div class="embed-container">
+					<div class="video">
+						<h3>Teaser Video</h3>
 							<?php echo $vid;?>
+						
 						</div>
 					<?php } ?>
 				</div>

@@ -1974,6 +1974,7 @@ section.homepage li{margin:0 0 5px 0}
 section.homepage a{color:#2d2d2d;border-bottom:1px solid #dd4040}
 section.homepage a:hover{color:#dd4040}
 p.graded-disclaimer{display:none}
+.video{width:100%;margin:5px auto;float:left}
 section.testimonials{width:100%;padding:5%;background-color:#efefef;text-align:center;margin:30px 0}
 section.testimonials .testimonial{font-size:18px}
 section.testimonials h2{width:100%;text-align:center;margin:0 0 30px 0}
