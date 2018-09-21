@@ -27,7 +27,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 			<a href="<?php bloginfo('url'); ?>/register">Register</a>
 			</div>
 		</li> -->
-		<?php echo do_shortcode('[theme-my-login]'); ?>
+		<?php //echo do_shortcode('[theme-my-login]'); ?>
 		<?php if(is_user_logged_in()) { ?>
 			<li>
 			<div class="rimubtn side"><a  href="<?php bloginfo('url'); ?>/my-account">My Account</a></div>

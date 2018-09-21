@@ -39,6 +39,11 @@ get_header();
 					<div class="teaser-btn rimubtn ">
 						<a href="<?php bloginfo('url'); ?>/courses/develop-your-brand">Take the Course Now</a>
 					</div>
+					<?php $vid=get_field('teaser_video'); if($vid) { ?>
+						<div class="embed-container">
+							<?php echo $vid;?>
+						</div>
+					<?php } ?>
 				</div>
 				<div class="item">
 					<?php
@@ -70,6 +75,9 @@ get_header();
 					<?php echo $lower_content_box_right; ?>
 				</div>
 			</section>
+
+			
+			<?php get_template_part('inc/testimonials'); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
