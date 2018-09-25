@@ -79,7 +79,7 @@ get_header();
 			</section>
 
 			
-			<?php get_template_part('inc/testimonials'); ?>
+			<?php //get_template_part('inc/testimonials'); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->

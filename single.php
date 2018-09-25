@@ -47,6 +47,12 @@ get_header(); ?>
 			<?php 
 
 		endwhile; // End of the loop.
+
+		if( is_single('develop-your-brand') ) {
+				get_template_part('inc/testimonials'); 
+			}
+
+
 		?>
 
 		</main><!-- #main -->

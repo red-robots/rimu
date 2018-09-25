@@ -26,7 +26,16 @@ get_header();
 				
 
 			endwhile; // End of the loop.
+
+
+			if( is_page('products-services') ) {
+				get_template_part('inc/testimonials'); 
+			}
+
+
 			?>
+
+
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
